@@ -1,0 +1,83 @@
+#biron butun son topib oxirgi raqamini yozing
+a = int(input("Son yozing: "))
+b = a % 10
+print("Last number is: " ,b)
+
+_______________________________________________________
+ 
+ #matnni teskarisiga ugirib beradi
+a = input("Suz kiriting: ")
+print(a[::-1].capitalize())
+____________________________________________
+#suzlarni urnini almashtirish kerak
+
+a = input('Suz kiriting:\n>>>')
+b = a.split()
+print(b[1].title(), b[0].title())
+____________________________________________
+#ixtiyoriy  3 xonali son kiritib uni bir biriga qushish
+
+a = input("Ixtiyoriy son kiriting:   \n>>>")
+print(int(a[0])+ int(a[1]) + int(a[2]))
+----------_______________________________________
+#ixtiyoriy son kiritib uni bir biriga qushish
+from random import randint
+a = randint(1, 500)
+b = randint(1, 500)
+c = int(input(' {} +{} ='.format (a, b))) 
+if c== (a + b):
+    print("Tugri")
+else:
+  print("Xato"0
+  _____________________________________________
+  #kabisa yilimi yuqmi aniqlash
+    
+while True:
+	yil = int(input('Yilni kitriting : '))
+	if (yil % 400 % 4) == 0:
+		print('Ushbu yil "Kabisa yili"')
+	else:
+		print('Ushbu yil "Kabisa yili" emas!')
+    ____________________________________________
+    
+#summani 10 000000 dan kam kiritish
+summa = input("Summani kiriting: \n>>> ")
+if summa.isdigit() and int(summa) > 0 and int(summa) < 1000000:
+    print("Tashakkur")
+else:
+    print("Xatolik bor!")
+    ___________________________________________
+    # Ism yoki familiyani kiritish scripti"
+ism = input("Ismingizni kiriting:")
+fam = input("Familiyangizni kirirting:")
+if ism or fam:
+    print("Tashakkur!")
+else:
+    print("Ism yoki familiyangizni kiriting:")
+    ----------------------------------------------
+    son = input("1dan 30 gacha bulgan son kiriting:")
+if son.isdigit():
+    son=int(son)
+    if son > 0 and son < 30:
+        qoldiq = son % 10
+        letter = " "
+        if son > 9 and son < 20:
+            letter = "un"
+        elif son > 19 and son < 30:
+            letter = "yigirma "
+        if qoldiq ==1:
+            letter += "bir"
+        elif qoldiq ==2:
+            letter+= "ikki"
+        elif qoldiq ==3:
+            letter+= "uch"
+        elif qoldiq ==4:
+            letter+= "turt"
+        elif qoldiq ==5:
+            letter+= "besh"
+        print(letter)
+    else:
+        print("1 dan 30 gacha bulgan sonni kirting!")
+else:
+    print("Son kiritish kerak!")
+    
